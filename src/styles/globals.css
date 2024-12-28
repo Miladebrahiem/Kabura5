@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #80232A;
+  --secondary-color: #222F52;
+  --tertiary-color: #3499A3;
+  --quaternary-color: #94731A;
+  --header-height: 5.082rem;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black font-poppins;
+  }
+
+  h1 {
+    @apply font-poppins text-[25px] font-extrabold text-secondary mb-4;
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-poppins text-[20px] font-bold text-secondary mb-4;
+  }
+}
